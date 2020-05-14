@@ -1,5 +1,4 @@
-right.prx {
-  global:
-    sceGameRight*;
+sceGameRight {
+  global: sceGameRight*;
   local: *;
 };
