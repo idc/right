@@ -1,7 +1,5 @@
 right.prx {
   global:
-    module_start;
-    module_stop;
     sceGameRight*;
   local: *;
 };
