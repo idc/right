@@ -2,7 +2,7 @@ SETLOCAL EnableDelayedExpansion
 
 SET TOOLCHAIN=%OO_PS4_TOOLCHAIN%
 
-SET LIBS=-lc -lkernel
+SET LIBS=-lkernel
 
 REM Compiler options. You likely won't need to touch these.
 SET CC=clang
