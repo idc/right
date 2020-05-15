@@ -64,7 +64,7 @@ FOR %%f in (%ODIR%\*.o.stub) DO SET STUBOBJS=!STUBOBJS! .\%%f
 
 REM Create the prx
 ECHO Creating OELF/PRX...
-%TOOLCHAIN%\bin\windows\create-lib.exe -in "%ODIR%\%TARGET%.elf" -out "%ODIR%\%TARGET%.oelf"
+%TOOLCHAIN%\bin\windows\create-lib.exe -libname sceGameRight -in "%ODIR%\%TARGET%.elf" -out "%ODIR%\%TARGET%.oelf"
 
 REM Cleanup
 COPY "%ODIR%\%TARGET%.prx" "%SDIR%\%TARGET%.prx"
