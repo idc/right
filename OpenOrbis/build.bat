@@ -24,7 +24,7 @@ SET LDIRS="-L%TOOLCHAIN%\lib"
 
 SET CFLAGS=-cc1 -triple x86_64-scei-ps4-elf -munwind-tables %IDIRS% -emit-obj
 SET CXXFLAGS=%CFLAGS%
-SET LFLAGS=-m elf_x86_64 -pie --version-script="%SDIR%\%TARGET%.version" --script "%TOOLCHAIN%\link.x" --eh-frame-hdr %LDIRS% %LIBS% --verbose "%TOOLCHAIN%\lib\crtlib.o"
+SET LFLAGS=-m elf_x86_64 --version-script="%SDIR%\%TARGET%.version" --script "%TOOLCHAIN%\link.x" --eh-frame-hdr %LDIRS% %LIBS% --verbose "%TOOLCHAIN%\lib\crtlib.o"
 
 SET STUBCFLAGS=-target x86_64-pc-linux-gnu -ffreestanding -nostdlib -fno-builtin -fPIC -c %IDIRS%
 SET STUBCXXFLAGS=%STUBCFLAGS%
