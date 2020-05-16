@@ -4,4 +4,4 @@
 
 Module loaded by the shell frontend to display a logo and copyright information when ▲+■+Options is pressed in the Information screen for a given application.
 
-![Homebrew](logo.png)
+![Homebrew](logo_preview.png)
